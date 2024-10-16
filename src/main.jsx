@@ -1,10 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import WhellOfLife from './WhellOfLife.jsx'
+import PolarAreaChart from './PolarAreaChart.jsx'
+import Content from './Content.jsx'
+import "bootstrap/dist/css/bootstrap.min.css";
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <WhellOfLife />
+    <Content />
   </StrictMode>,
 )
