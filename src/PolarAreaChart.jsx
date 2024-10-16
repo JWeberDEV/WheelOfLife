@@ -1,7 +1,7 @@
 import { PolarArea } from 'react-chartjs-2';
 import { Chart as ChartJS, RadialLinearScale, ArcElement, Tooltip, Legend } from 'chart.js';
 import React, { useState } from 'react';
-import './style.css'
+import './Content.css'
 
 // Register the necessary chart elements
 ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
@@ -25,7 +25,7 @@ const PolarAreaChart = () => {
           'rgba(143, 12, 205, 0.5)',
           'rgba(143, 12, 25, 0.5)',
           'rgba(13, 120, 25, 0.5)',
-          'rgba(13, 120, 125, 0.5)',
+          'rgba(253, 100, 85, 0.5)',
           'rgba(13, 120, 205, 0.5)',
           'rgba(113, 255, 125, 0.5)',
           'rgba(255, 120, 25, 0.5)',
