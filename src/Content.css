@@ -1,7 +1,17 @@
+body {
+  background: rgb(207, 245, 223) !important;
+}
+
 .bg-nav {
   background-color: #fff;  
 }
 
-body {
-  background: rgb(207, 245, 223) !important;
+.card-general {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.171);
+  border-radius: 10px !important;
+  border-color: transparent !important;
+  background: #fff;
 }

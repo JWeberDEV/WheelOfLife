@@ -11,6 +11,7 @@ import {
   Col,
   Button,
   Card,
+  Input
 } from 'reactstrap';
 import Select from 'react-select'
 import chroma from 'chroma-js';
@@ -112,10 +113,10 @@ const content = () => {
       <Container fluid>
         <Row className='justify-content-center pt-1 pb-1'>
           <Col lg='12'>
-              <Card className='p-2'>
+              <Card className='p-2 card-general'>
                 <Row>
                   <Col lg='3'>
-                    <Select options={options} placeholder='Selecione'/>  
+                    <Select options={options} placeholder='Selecione um área'/>  
                   </Col>
                   <Col lg='3'>
                     <Select
@@ -124,9 +125,17 @@ const content = () => {
                       styles={colourStyles}
                     />
                   </Col>
+                  <Col lg='3'>
+                    <Input placeholder='Informe a nota de 0 a 10'/>
+                  </Col>
                   <Col>
                     <Button>
                       Salvar
+                    </Button> 
+                  </Col>
+                  <Col>
+                    <Button>
+                      Exportar Roda da Vida
                     </Button> 
                   </Col>
                 </Row>
@@ -135,7 +144,7 @@ const content = () => {
         </Row>
         <Row className='justify-content-center'>
           <Col lg="6" md='12' sm="12">
-            <Card>
+            <Card className='card-general'>
               <PolarAreaChart/>
             </Card>
           </Col>

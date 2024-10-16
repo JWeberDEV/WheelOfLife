@@ -7,8 +7,6 @@ import './Content.css'
 ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
 
 const PolarAreaChart = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
   
   const data = {
     labels: ['Alimentação', 'Relação com a comida', 'Vida social', 'Disposição', 'Sono', 'Relações pessoais', 'Relação com o corpo', 'Trabalho', 'Lazer', 'Autocuidado', 'Autocontrole'],

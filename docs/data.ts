@@ -7,16 +7,19 @@ export interface ColourOption {
 }
 
 export const colourOptions: readonly ColourOption[] = [
-  { value: 'ocean', label: 'Ocean', color: '#00B8D9', isFixed: true },
-  { value: 'blue', label: 'Blue', color: '#0052CC', isDisabled: true },
-  { value: 'purple', label: 'Purple', color: '#5243AA' },
-  { value: 'red', label: 'Red', color: '#FF5630', isFixed: true },
-  { value: 'orange', label: 'Orange', color: '#FF8B00' },
-  { value: 'yellow', label: 'Yellow', color: '#FFC400' },
-  { value: 'green', label: 'Green', color: '#36B37E' },
-  { value: 'forest', label: 'Forest', color: '#00875A' },
-  { value: 'slate', label: 'Slate', color: '#253858' },
-  { value: 'silver', label: 'Silver', color: '#666666' },
+  { value: '#00B8D980', label: 'Azul royal', color: '#00B8D980'},
+  { value: '#36A2EB80', label: 'Azul céu', color: '#36A2EB80' },
+  { value: '#4BC0C080', label: 'Azul turquesa', color: '#4BC0C080' },
+  { value: '#0D78CD80', label: 'Azul oceano', color: '#0D78CD80' },
+  { value: '#FF638480', label: 'Rosa avermelhado', color: '#FF638480'},
+  { value: '#FFCE5680', label: 'Amarelo dourado', color: '#FFCE5680'},
+  { value: '#FF781980', label: 'Laranja queimado', color: '#FF781980' },
+  { value: '#8F0C1980', label: ' Vinho profundo', color: '#8F0C1980' },
+  { value: '#FD645580', label: 'Laranja avermelhado', color: '#FD645580' },
+  { value: '#9966FF80', label: 'Roxo lavanda', color: '#9966FF80' },
+  { value: '#8F0CCD80', label: 'Roxo profundo', color: '#8F0CCD80' },
+  { value: '#0D781980', label: 'Verde musgo', color: '#0D781980' },
+  { value: '#71FF7D80', label: 'Verde neon', color: '#71FF7D80' },
 ];
 
 export interface FlavourOption {
