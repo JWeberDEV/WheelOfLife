@@ -1,5 +1,5 @@
 import PolarAreaChart from './PolarAreaChart'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Collapse,
   Navbar,
@@ -20,20 +20,26 @@ import { colourOptions } from '/docs/data';
 const content = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const [options, setOptions] = useState([]);
+  const [aspect, setAspect] = useState([]);
 
-  const options = [
-    { value: 'Alimentação', label: 'Alimentação' },
-    { value: 'Relação com a comida', label: 'Relação com a comida' },
-    { value: 'Vida social', label: 'Vida social' },
-    { value: 'Disposição', label: 'Disposição' },
-    { value: 'Sono', label: 'Sono' },
-    { value: 'Relações pessoais', label: 'Relações pessoais' },
-    { value: 'Relação com o corpo', label: 'Relação com o corpo' },
-    { value: 'Trabalho', label: 'Trabalho' },
-    { value: 'Lazer', label: 'Lazer' },
-    { value: 'Autocuidado', label: 'Autocuidado' },
-    { value: 'Autocontrole', label: 'Autocontrole' },
-  ]
+  // data: [5, 8, 7, 6, 10, 10, 3, 7, 8, 10, 5],
+
+  useEffect(() => {
+    setOptions([
+      { value: 'Alimentação', label: 'Alimentação' },
+      { value: 'Relação com a comida', label: 'Relação com a comida' },
+      { value: 'Vida social', label: 'Vida social' },
+      { value: 'Disposição', label: 'Disposição' },
+      { value: 'Sono', label: 'Sono' },
+      { value: 'Relações pessoais', label: 'Relações pessoais' },
+      { value: 'Relação com o corpo', label: 'Relação com o corpo' },
+      { value: 'Trabalho', label: 'Trabalho' },
+      { value: 'Lazer', label: 'Lazer' },
+      { value: 'Autocuidado', label: 'Autocuidado' },
+      { value: 'Autocontrole', label: 'Autocontrole' },
+    ]);
+  }, []);
   
   const dot = (color = 'transparent') => ({
     alignItems: 'center',
