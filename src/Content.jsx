@@ -179,8 +179,7 @@ const content = () => {
             alt="logo"
             src="./src/assets/logo.svg"
             style={{
-              height: 100,
-              width: 150,
+              width: 250,
             }}
           />
         </NavbarBrand>
@@ -194,7 +193,7 @@ const content = () => {
       </Navbar>
 
       <Container fluid>
-        <Row className="justify-content-center pt-1 pb-1">
+        <Row className="justify-content-center pt-2 pb-2">
           <Col lg="12">
             <Card className="p-2 card-general">
               <Row>
