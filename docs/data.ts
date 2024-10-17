@@ -13,13 +13,15 @@ export const colourOptions: readonly ColourOption[] = [
   { value: '#0D78CD80', label: 'Azul oceano', color: '#0D78CD80' },
   { value: '#FF638480', label: 'Rosa avermelhado', color: '#FF638480'},
   { value: '#FFCE5680', label: 'Amarelo dourado', color: '#FFCE5680'},
+  { value: '#eeee0980', label: 'Amarelo neon', color: '#eeee0980' },
   { value: '#FF781980', label: 'Laranja queimado', color: '#FF781980' },
-  { value: '#8F0C1980', label: ' Vinho profundo', color: '#8F0C1980' },
+  { value: '#8F0C1980', label: 'Vinho profundo', color: '#8F0C1980' },
   { value: '#FD645580', label: 'Laranja avermelhado', color: '#FD645580' },
   { value: '#9966FF80', label: 'Roxo lavanda', color: '#9966FF80' },
   { value: '#8F0CCD80', label: 'Roxo profundo', color: '#8F0CCD80' },
   { value: '#0D781980', label: 'Verde musgo', color: '#0D781980' },
   { value: '#71FF7D80', label: 'Verde neon', color: '#71FF7D80' },
+  
 ];
 
 export interface FlavourOption {

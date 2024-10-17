@@ -6,28 +6,16 @@ import './Content.css'
 // Register the necessary chart elements
 ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
 
-const PolarAreaChart = () => {
+const PolarAreaChart = (props) => {
+  console.log(props);
   
   const data = {
     labels: ['Alimentação', 'Relação com a comida', 'Vida social', 'Disposição', 'Sono', 'Relações pessoais', 'Relação com o corpo', 'Trabalho', 'Lazer', 'Autocuidado', 'Autocontrole'],
     datasets: [
       {
         label: 'Minha nota',
-        data: [5, 8, 7, 6, 10, 10, 3, 7, 8, 10, 5],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.5)',
-          'rgba(54, 162, 235, 0.5)',
-          'rgba(255, 206, 86, 0.5)',
-          'rgba(75, 192, 192, 0.5)',
-          'rgba(153, 102, 255, 0.5)',
-          'rgba(143, 12, 205, 0.5)',
-          'rgba(143, 12, 25, 0.5)',
-          'rgba(13, 120, 25, 0.5)',
-          'rgba(253, 100, 85, 0.5)',
-          'rgba(13, 120, 205, 0.5)',
-          'rgba(113, 255, 125, 0.5)',
-          'rgba(255, 120, 25, 0.5)',
-        ],
+        data: props.value.map(e=>e.value),
+        backgroundColor: props.value.map(e=>e.color),
         borderWidth: 0,
       },
     ],
