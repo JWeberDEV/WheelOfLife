@@ -239,7 +239,7 @@ const Content = () => {
             <Row className="justify-content-center">
               <img
                 alt="logo"
-                src="assets/fullLogo.png"
+                src="assets/logo2.png"
                 style={{
                   width: 230,
                 }}
@@ -255,7 +255,7 @@ const Content = () => {
             <NavbarBrand href="/">
               <img
                 alt="logo"
-                src="./src/assets/fulllogo.png"
+                src="./src/assets/logo2.png"
                 style={{
                   width: 250,
                 }}
