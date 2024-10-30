@@ -19,6 +19,7 @@ import { colourOptions } from "/docs/data";
 import { useMediaQuery } from "react-responsive";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import logo from "../src/assets/logo2.png"
 
 const Content = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -239,7 +240,7 @@ const Content = () => {
             <Row className="justify-content-center">
               <img
                 alt="logo"
-                src="./public/logo2.png"
+                src={logo}
                 style={{
                   width: 230,
                 }}
@@ -255,7 +256,7 @@ const Content = () => {
             <NavbarBrand href="/">
               <img
                 alt="logo"
-                src="./public/logo2.png"
+                src={logo}
                 style={{
                   width: 250,
                 }}
